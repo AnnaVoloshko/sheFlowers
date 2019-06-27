@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>she.flowers.ua</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/flowers/style__flowers.css">
+    <style>
+        .flex{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .flex > *{
+            margin-bottom: 20px;
+         }
+        .hidden{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="cover-blok">
+                <a href="../sheFlowers.html" class="logo"><img
+                        src="http://x-lines.ru/letters/i/cyrillicscript/2779/000000/42/0/kpwgkengptzzq3m1qc.png"></a>
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="li dropdown">Товары
+                            <ul class="menu__submenu types">
+                                <li class="submenu-li"> <a href="flowers.html" class="link--1">Букеты</a>
+                                </li>
+                                <li class="submenu-li"> <a href="../candles/candles.html" class="link--1">Свечи</a> </li>
+                                <li class="submenu-li"> <a href="../aroma/aroma.html" class="link--1">Саше</a> </li>
+                            </ul>
+                        </li>
+                        <li class="li dropdown">Информация
+                            <ul class="menu__submenu">
+                                <li class="submenu-li"> <a href="../pay-info.html" class="link--1">Оплата</a> </li>
+                                <li class="submenu-li"> <a href="../delivery.html" class="link--1">Доставка</a> </li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="../about-us.html" class="link">О нас</a></li>
+                        <div class="fas fa-shopping-basket" onclick='location.href="../basket.php"'></div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="components-blok">
+                <div class="filter">
+                    <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" class="filter-icon"></path>
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                    </svg>
+                    <p class="filter__text" onclick="filterVisiable()">Фильтр</p>
+
+                    <div class="filter__hidden">
+                        <div class="hidden__hidden-blok">
+                            <div class="hidden-blok__title">Цена</div>
+                            <div class="list-blok">
+                                <div class="hidden-blok__list">
+                                    <input type="checkbox" id="price__1" class="list__price list__price_order" value="1">
+                                    <label for="price__1" class="price__label" data-cost="200">200 грн.</label>
+                                </div>
+                                <div class="hidden-blok__list left">
+                                    <input type="checkbox" id="price__2" class="list__price list__price_order" value="2">
+                                    <label for="price__2" class="price__label" data-cost="350">350 грн.</label>
+                                </div>
+                                <div class="hidden-blok__list">
+                                    <input type="checkbox" id="price__3" class="list__price list__price_order" value="3">
+                                    <label for="price__3" class="price__label" data-cost="650">650 грн.</label>
+                                </div>
+                                <div class="hidden-blok__list left">
+                                    <input type="checkbox" id="price__4" class="list__price list__price_order" value="4">
+                                    <label for="price__4" class="price__label" data-cost="750">750 грн.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-blok__list in-store">
+                            <input type="checkbox" id="in__store" class="in__store" onchange="ShowNotFalse()" value="5">
+                            <label for="in__store" class="in-store__label" data-cost="0">есть в наличии</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-blok-3 flex">
+                <div class="cards-blok__cards" id="200">
+                    <a class="cards__image" href="flower__00200.html">
+                        <img src="../../images/flowers/flowers_buy_00200.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Весна"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button" onClick='location.href="flower__00200.html"'>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-blok__cards" id="200">
+                    <a class="cards__image" href="flower__00220.html">
+                        <img src="../../images/flowers/flowers_buy_00220.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Соцветие"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button" onClick='location.href="flower__00220.html"'>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-blok__cards" id="200">
+                    <a class="cards__image" href="flower__00230.html">
+                        <img src="../../images/flowers/flowers_buy_00230.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Пасхалка"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button" onClick='location.href="flower__00230.html"'>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-blok__cards" id="650">
+                    <a class="cards__image" href="flower__00650.html">
+                        <img src="../../images/flowers/flowers_buy_00650.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Ароматы осени"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">650.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button long-name" onClick='location.href="flower__00650.html"'>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-blok__cards false" id="750">
+                    <a class="cards__image" <!--href="flower__00750.html"-->
+                    <img src="../../images/flowers/flowers_buy_00750.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description false">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Цветочная феерия"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost false">750.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__not-in-stock">нет в наличии</div>
+                        </div>
+                        <!--<div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button long-name" onClick='location.href="flower__00750.html"'>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="cards-blok__cards" id="650">
+                    <a class="cards__image" href="flower__00651.html">
+                        <img src="../../images/flowers/flowers_buy_00651.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Лавандовая дымка"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">650.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button long-name" onClick='location.href="flower__00651.html"'>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-blok__cards" id="200">
+                    <a class="cards__image" href="flower__00201.html">
+                        <img src="../../images/flowers/flowers_buy_00201.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Нежность"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button" onClick='location.href="flower__00201.html"'>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-blok__cards" id="200">
+                    <a class="cards__image" href="flower__00202.html">
+                        <img src="../../images/flowers/flowers_buy_00202.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Лаванда"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button" onClick='location.href="flower__00202.html"'>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-blok__cards" id="652">
+                    <a class="cards__image" href="flower__00652.html">
+                        <img src="../../images/flowers/flowers_buy_00652.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Полевой букет"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">650.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button long-name" onClick='location.href="flower__00652.html"'>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-blok__cards hidden" id="200">
+                    <a class="cards__image" href="flower__00203.html">
+                        <img src="../../images/flowers/flowers_buy_00203.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Сладость"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button" onClick='location.href="flower__00203.html"'>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-blok__cards hidden" id="200">
+                    <a class="cards__image" href="flower__00204.html">
+                        <img src="../../images/flowers/flowers_buy_00204.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Зефирка"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button" onClick='location.href="flower__00204.html"'>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-blok__cards false hidden" id="350">
+                    <a class="cards__image" <!--href="flower__00350.html"-->
+                    <img src="../../images/flowers/flowers_buy_00350.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description false">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Розeтт"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost false">350.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__not-in-stock">нет в наличии</div>
+                        </div>
+                        <!--<div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button" onClick='location.href="flower__00350.html"'>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="cards-blok__cards hidden" id="200">
+                    <a class="cards__image" href="flower__00205.html">
+                        <img src="../../images/flowers/flowers_buy_00205.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Голубая гавань"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button long-name" onClick='location.href="flower__00205.html"'>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-blok__cards hidden" id="200">
+                    <a class="cards__image" href="flower__00206.html">
+                        <img src="../../images/flowers/flowers_buy_00206.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Мини комплимент"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button long-name" onClick='location.href="flower__00206.html"'>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-blok__cards hidden" id="200">
+                    <a class="cards__image" href="flower__00207.html">
+                        <img src="../../images/flowers/flowers_buy_00207.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Хлопковая нежность"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button long-name" onClick='location.href="flower__00207.html"'>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-blok__cards false hidden" id="350">
+                    <a class="cards__image" <!--href="flower__00351.html"-->
+                    <img src="../../images/flowers/flowers_buy_00351.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description false">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Персик"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost false">350.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__not-in-stock">нет в наличии</div>
+                        </div>
+                        <!--<div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button" onClick='location.href="flower__00351.html"'>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="cards-blok__cards hidden" id="200">
+                    <a class="cards__image" src="flower__00208.html">
+                        <img src="../../images/flowers/flowers_buy_00208.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Прованс"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <div class="discription__hidded">
+                            <input type="button" value="Подробнее" class="button" onClick='location.href="flower__00208.html"'>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-blok__cards false hidden" id="200">
+                    <a class="cards__image" <!--href="flower__00209.html"-->
+                    <img src="../../images/flowers/flowers_buy_00209.jpg" alt="photo" class="cards__image">
+                    </a>
+                    <div class="cards__description false">
+                        <div class="description-cover">
+                            <div class="description__type">Букеты</div>
+                            <p class="description__name">Композиция "Лунария"</p>
+                        </div>
+                        <div class="one-line">
+                            <p class="description__cost false">200.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__not-in-stock">нет в наличии</div>
+                        </div>
+                        <!--<div class="discription__hidded false">
+                            <input type="button" value="Подробнее" class="button " onClick='location.href="flower__00209.html"'>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+
+
+            </div>
+
+            <div class="button-blok">
+                <button class="button__more-info" value="Click" id="new_cart">Показать ещё</button>
+            </div>
+
+            <div class="contact-with-us">
+                <div class="contact-with-us__title">Задать вопрос</div>
+                <form class="main-blok" action="/send.php" method="POST">
+                    <input type="text" name="theme" placeholder="Введите тему вашего вопроса" class="main-blok__input">
+                    <input type="email" name="email" placeholder="Введите ваш электронный адрес" class="main-blok__input">
+                    <input type="text" name="question" placeholder="Задайте ваш вопрос" class="main-blok__input">
+                    <button class="button__question" type="submit">Отправить</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="some-info">
+                <div class="some-info__blok">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="blok__location title">Шоу рум</p>
+                    <p class="blok__location">Украина, г. Одесса,</p>
+                    <p class="blok__location">ул. Преображенская, 34</p>
+                </div>
+                <div class="some-info__blok">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p class="blok__contacts title">Контакты</p>
+                    <p class="blok__contacts">+38 097 942 73 73</p>
+                    <p class="blok__contacts">+38 063 476 50 99</p>
+                </div>
+                <div class="some-info__blok">
+                    <i class="fas fa-user-friends"></i>
+                    <p class="blok__social-network title">Социальные сети</p>
+                    <div class="blok__social-network">
+                        <a href="https://instagram.com/she.flowers.ua?igshid=1pt9jz3irooej" class="fab fa-instagram"></a>
+                        <a href="https://www.facebook.com/she.flowers.ua/" class="fab fa-facebook-f left"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../buttonClick.js"></script>
+
+    <!--Скопировать во все товары-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/filter.js"></script>
+    <!--Скопировать во все товары-->
+</body>
+</html>

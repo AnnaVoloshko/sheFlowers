@@ -1,0 +1,332 @@
+body{
+    width: 100%;
+    margin: auto;
+    
+    background-image: url("../../images/all-buy-fon-2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #FFEBCD;
+    background-position: center;
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1024px;
+    margin: auto;
+    padding: 0 25px;
+}
+.cover-blok{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 47px;
+    margin-bottom: 62px;
+}
+.li{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+.link, .li{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 11px;
+
+}
+.link:hover{
+    background-color: #DAA520;
+    border-radius: 5px;
+    color: #fff;
+}
+.submenu-li{
+    list-style-type: none;
+    background-color: #daa520;
+}
+.menu__submenu{
+    position: absolute;
+    width: 193px;
+    top: 27px;
+    left: -40px;
+}
+.menu__submenu.types{
+    width: 135px;
+}
+.link--1{
+    display: none;
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-decoration: none;
+    padding: 1px 0 4px 0;
+    text-align: center;
+}
+.link--1:hover{
+    color: #fff;
+}
+.li.dropdown:hover{
+    background-color: #DAA520;
+    border-radius: 5px;
+    color: #fff;
+}
+.li.dropdown:hover .link--1{
+    display: block;
+}
+
+.fas.fa-shopping-basket{
+    font-size: 21px;
+    color: #fff;
+    padding: 0 5px;
+}
+.fas.fa-shopping-basket:hover{
+    color: #800000;
+}
+
+
+/*****************MAIN*****************/
+.main{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.components-blok{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 10px 12px;
+}
+.filter{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.filter__text{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding-left: 7px;
+}
+.filter__hidden{
+    display: none;
+    background-color: rgb(255, 255, 255, 0.7);
+    position: absolute;
+    top: -72px;
+    left: 124px;
+    width: 228px;
+    height: 105px;
+    border-radius: 5px;
+    z-index: 2;
+    padding: 9px;
+    transition: left 0.5s ease-in-out;
+}
+.filter__text:hover{
+    cursor: pointer;
+}
+
+.hidden__hidden-blok{
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+.list-blok{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hidden-blok__list.left{
+    padding-left: 29px;
+}
+.hidden-blok__title{
+    text-align: center;
+}
+.list__price{
+    position: absolute;
+}
+.price__label{
+    padding-left: 20px;
+}
+
+
+.cards-blok-3{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.cards-blok__cards{
+    background-color: rgb(255, 255, 255, 0.4);
+    width: 30%;
+    border-radius: 5px;
+    position: relative;
+    height: 531px;
+    overflow: hidden;
+}
+.cards-blok__cards.false{
+    filter: grayscale(100%);
+    filter: gray;
+
+}
+.cards-blok__cards:hover .cards__description{
+    bottom: 0;
+}
+.cards__image{
+    width: 293px;
+    height: 364px;
+}
+
+.cards__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 215px;
+    position: absolute;
+    bottom: -48px;
+    left: 0;
+    right: 0;
+    transition: bottom 0.25s;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+.cards__description.false{
+    height: 167px;
+    bottom: 0;
+}
+.description-cover{
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+.description__type{
+    text-align: center;
+    padding: 4px 10px;
+    width: 68px;
+    background-color: rgb(255, 160, 122, 0.7);
+    border-radius: 5px;
+    font-size: 13px;
+    margin: auto;
+}
+.description__name{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 16px 0 12px 0;
+}
+.one-line{
+    text-align: center;
+}
+.description__cost{
+    font-weight: 700;
+}
+.description__cost.false{
+    display: none;
+}
+.description__in-stock{
+    color: #006400;
+}
+.description__not-in-stock{
+    margin-top: 26px;
+    font-size: 23px;
+}
+.button{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: #5F9EA0;
+    
+    transition-property: transform;
+    transition-duration: 1s;
+
+    border-radius: 5px;
+    padding: 10px 38px;
+    font-size: 16px;
+    margin-top: 16px;
+}
+.button:hover{
+    background-color: #FFD700;
+    transform: scale(1.2);
+}
+
+
+.contact-with-us{
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    bottom: -152px;
+    right: 0;
+    background-color: rgb(205, 92, 92, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    transition: bottom 0.5s ease-in-out;
+}
+.contact-with-us:hover{
+    bottom: 0;
+}
+.contact-with-us__title{
+    font-size: 24px;
+}
+.main-blok{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.main-blok__input{
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 7px;
+    height: 24px;
+    padding: 0 5px;
+}
+.button__question{
+    border-radius: 5px;
+    border: none;
+    padding: 9px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #5F9EA0;
+}
+.button__question:hover{
+    background-color: #FFD700;
+    color: #000;
+}
+
+
+/************FOOTER***************************/
+
+.some-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 55px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.some-info__blok{
+    text-align: center;
+    color: #fff;
+}
+.fas{
+    font-size: 50px;
+    color: #BC8F8F;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.blok__social-network{
+    display: flex;
+    justify-content: center;
+}
+.fab{
+    text-decoration: none;
+    color: #BC8F8F;
+    font-size: 24px;
+}
+.fab.fa-instagram{
+    font-size: 28px;
+}
+.fab.left{
+    margin-left: 18px;
+}
+.fab:hover{
+    color: #800000;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>she.flowers.ua</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/flowers/style__flower-00200.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="cover-blok">
+                <a href="../sheFlowers.html" class="logo"><img
+                        src="http://x-lines.ru/letters/i/cyrillicscript/2779/000000/42/0/kpwgkengptzzq3m1qc.png"></a>
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="li dropdown">Товары
+                            <ul class="menu__submenu types">
+                                <li class="submenu-li"> <a href="flowers.html" class="link--1">Букеты</a>
+                                </li>
+                                <li class="submenu-li"> <a href="../candles/candles.html" class="link--1">Свечи</a> </li>
+                                <li class="submenu-li"> <a href="../aroma/aroma.html" class="link--1">Саше</a> </li>
+                            </ul>
+                        </li>
+                        <li class="li dropdown">Информация
+                            <ul class="menu__submenu">
+                                <li class="submenu-li"> <a href="../pay-info.html" class="link--1">Оплата</a> </li>
+                                <li class="submenu-li"> <a href="../delivery.html" class="link--1">Доставка</a> </li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="../about-us.html" class="link">О нас</a></li>
+                        <div class="fas fa-shopping-basket" onclick='location.href="../basket.php"'></div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="order-blok">
+                <img src="../../images/flowers/flowers_buy_00652.jpg" alt="photo" class="order-blok__img">
+                <div class="order-blok__description">
+                    <p class="description__name" id="name_prod">Композиция "Полевой букет"</p>
+                    <div class="color-blok">
+                        <p class="description__text info__text">
+                            Если вы не нашли подходящий товар или хотите уточнить определенные моменты, 
+                            у вас есть возможность связаться с менеджером по номеру +38 097 942 73 73 либо 
+                            +38 063 476 50 99. Мы будем рады ответить на все ваши вопросы. 
+                        </p>
+                        <div class="description__price">
+                            <p class="description__cost">650.00 <span class="description__cost regular">грн.</span></p>
+                            <div class="description__in-stock">в наличии</div>
+                        </div>
+                        <input type="button" value="В корзину" class="button"id="buy" data-type="flowers" data-val="00652" data-cost="650">
+                        <div class="description__info">
+                            <p class="info__text delivery">
+                                Стоимость доставки производится по тарифам почты.
+                            </p>
+                            <p class="info__text delivery">
+                                Отправка товаров производится по всей Украине и за границу.
+                            </p>
+                        </div>
+                    </div>
+                    <input type="button" value="Вернуться ко всему списку" class="button--1" onClick='location.href="flowers.html"'>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="some-info">
+                <div class="some-info__blok">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="blok__location title">Шоу рум</p>
+                    <p class="blok__location">Украина, г. Одесса,</p>
+                    <p class="blok__location">ул. Преображенская, 34</p>
+                </div>
+                <div class="some-info__blok">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p class="blok__contacts title">Контакты</p>
+                    <p class="blok__contacts">+38 097 942 73 73</p>
+                    <p class="blok__contacts">+38 063 476 50 99</p>
+                </div>
+                <div class="some-info__blok">
+                    <i class="fas fa-user-friends"></i>
+                    <p class="blok__social-network title">Социальные сети</p>
+                    <div class="blok__social-network footer">
+                        <a href="https://instagram.com/she.flowers.ua?igshid=1pt9jz3irooej" class="fab fa-instagram"></a>
+                        <a href="https://www.facebook.com/she.flowers.ua/" class="fab fa-facebook-f left"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js_order.js"></script>
+
+</body>
+</html>

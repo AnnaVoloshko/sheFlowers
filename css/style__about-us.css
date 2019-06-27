@@ -1,0 +1,144 @@
+body{
+    width: 100%;
+    margin: auto;
+    
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-color: #FFEBCD;
+    background-position: right;
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1024px;
+    margin: auto;
+    padding: 0 25px;
+}
+.cover-blok{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 47px;
+    margin-bottom: 62px;
+}
+.li{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+.link, .li{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-decoration: none;
+    padding: 6px 11px;
+}
+.link:hover{
+    background-color: #DAA520;
+    border-radius: 5px;
+    color: #fff;
+}
+.submenu-li{
+    list-style-type: none;
+    background-color: #daa520;
+}
+.menu__submenu{
+    position: absolute;
+    width: 193px;
+    top: 27px;
+    left: -40px;
+}
+.menu__submenu.types{
+    width: 136px;
+}
+.link--1{
+    display: none;
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-decoration: none;
+    padding: 1px 0 4px 0;
+    text-align: center;
+}
+.link--1:hover{
+    color: #fff;
+}
+.li.dropdown:hover{
+    background-color: #DAA520;
+    border-radius: 5px;
+    color: #fff;
+}
+.li.dropdown:hover .link--1{
+    display: block;
+}
+
+.fas.fa-shopping-basket{
+    font-size: 21px;
+    color: #000;
+    padding: 0 5px;
+}
+.fas.fa-shopping-basket:hover{
+    color: #800000;
+}
+
+
+/*****************MAIN*****************/
+.cover-blok--2{
+    display: flex;
+    align-items: center;
+}
+.about-us-blok__text{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    padding-left: 26px;
+    margin-top: 0;
+}
+
+
+
+
+/************FOOTER***************************/
+/*.footer{
+    background-image: url("footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/
+.some-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 74px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.some-info__blok{
+    text-align: center;
+}
+.fas{
+    font-size: 50px;
+    color: #DC143C;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.blok__social-network{
+    display: flex;
+    justify-content: center;
+}
+.fab{
+    text-decoration: none;
+    color: #DC143C;
+    font-size: 24px;
+}
+.fab.fa-instagram{
+    font-size: 28px;
+}
+.fab.left{
+    margin-left: 18px;
+}
+.fab:hover{
+    color: #800000;
+}

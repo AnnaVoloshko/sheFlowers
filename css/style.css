@@ -1,0 +1,255 @@
+body{
+    width: 100%;
+    margin: auto;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1024px;
+    margin: auto;
+    padding: 0 25px;
+}
+.header{
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-color: #FFEBCD;
+    background-position: center;
+    background-size: cover;
+}
+.cover-blok{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 47px;
+    margin-bottom: 62px;
+}
+.li{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+.link, .li{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-decoration: none;
+    padding: 6px 11px;
+}
+.link:hover{
+    background-color: #DAA520;
+    border-radius: 5px;
+    color: #fff;
+}
+.submenu-li{
+    list-style-type: none;
+    background-color: #daa520;
+}
+.menu__submenu{
+    position: absolute;
+    width: 193px;
+    top: 27px;
+    left: -40px;
+}
+.link--1{
+    display: none;
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-decoration: none;
+    padding: 1px 0 4px 0;
+    text-align: center;
+}
+.link--1:hover{
+    color: #fff;
+}
+.li.dropdown:hover{
+    background-color: #DAA520;
+    border-radius: 5px;
+    color: #fff;
+}
+.li.dropdown:hover .link--1{
+    display: block;
+}
+.fas.fa-shopping-basket{
+    font-size: 21px;
+    color: #000;
+    padding: 0 5px;
+}
+.fas.fa-shopping-basket:hover{
+    color: #800000;
+}
+
+
+
+
+/*************************КАТЕГОРИИ**********************/
+.categories{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 0px 0 100px 0;
+}
+.categories__blok{
+    display: flex;
+    flex-direction: column;
+    background-color: #BC8F8F;
+    width: 30%;
+    background-image: url("../images/flower-fon.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transition-property: background-image;
+    transition-duration: 2s;
+}
+.categories__blok.categories__flowers{
+    background-position: -36px 0;
+}
+.categories__blok.categories__candles{
+    background-image: url("../images/candle-fon.jpg");
+    color: #fff;
+    font-size: 27px;
+}
+.categories__blok.categories__aroma{
+    background-image: url("../images/sashe-fon.jpg");
+    font-size: 27px;
+}
+.categories__flowers{
+    padding-top: 201px;
+}
+.text{
+    padding: 35px 0 31px 27px;
+    transition-property: color;
+    transition-duration: 2s;
+}
+.text.candles__text{
+    padding-top: 76px;
+}
+.button{
+    visibility: hidden;
+    padding: 12px 20px;
+    border: 0;
+    background-color: #BC8F8F;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+}
+.button.candles__button{
+    margin-top: auto;
+}
+.button.aroma__button{
+    margin-top: auto;
+}
+.button:hover{
+    background-color: #DB7093;
+}
+
+.categories__blok.categories__flowers:hover{
+    background-image: url("../images/flower-fon-2.jpg");
+    /*background-position: -6px 0px;*/
+}
+.categories__blok.categories__candles:hover{
+    background-image: url("../images/candle-fon-2.jpg");
+    background-position: -10px 0;
+}
+.categories__blok.categories__aroma:hover{
+    background-image: url("../images/sashe-fon-2.jpg");
+    background-position: -32px -45px;
+}
+.categories__blok:hover .button{
+    visibility: visible;
+}
+.categories__blok.categories__flowers:hover .text{
+    color: #fff;
+}
+
+
+/*********MAIN*********/
+.main{
+    background-image: url("../images/main-fon.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: double;
+    border-top: double;
+    border-top-color: darkred;
+    border-bottom-color: darkred;
+}
+.about-us{
+    margin: 0;
+    padding: 0 140px;
+}
+.about-us__line{
+    background-image: url("../images/line-top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 702px;
+    height: 108px;
+}
+.about-us__text{
+    font-family: 'Montserrat Alternates', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    padding: 0 0 15px 0;
+    text-align: justify;
+}
+.about-us__text.last{
+    padding-bottom: 0;
+}
+.about-us__line.bottom{
+    background-image: url("../images/line-bottom.png");
+}
+
+
+
+/************FOOTER***************************/
+.footer{
+    background-image: url("../images/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.some-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 74px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.some-info__blok{
+    text-align: center;
+}
+.fa-map-marker-alt,
+.fa-mobile-alt,
+.fa-user-friends{
+    font-size: 50px;
+    color: #DC143C;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.blok__social-network{
+    display: flex;
+    justify-content: center;
+}
+.fab{
+    text-decoration: none;
+    color: #DC143C;
+    font-size: 24px;
+}
+.fab.fa-instagram{
+    font-size: 28px;
+}
+.fab.left{
+    margin-left: 18px;
+}
+.fab:hover{
+    color: #800000;
+}

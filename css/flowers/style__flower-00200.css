@@ -1,0 +1,240 @@
+body{
+    width: 100%;
+    margin: auto;
+    
+    background-image: url("../../images/all-buy-fon-2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #FFEBCD;
+    background-position: center;
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1024px;
+    margin: auto;
+    padding: 0 25px;
+}
+.cover-blok{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 47px;
+    margin-bottom: 62px;
+}
+.li{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+.link, .li{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 11px;
+
+}
+.link:hover{
+    background-color: #DAA520;
+    border-radius: 5px;
+    color: #fff;
+}
+.submenu-li{
+    list-style-type: none;
+    background-color: #daa520;
+}
+.menu__submenu{
+    position: absolute;
+    width: 193px;
+    top: 27px;
+    left: -40px;
+}
+.menu__submenu.types{
+    width: 136px;
+}
+.link--1{
+    display: none;
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-decoration: none;
+    padding: 1px 0 4px 0;
+    text-align: center;
+}
+.link--1:hover{
+    color: #fff;
+}
+.li.dropdown:hover{
+    background-color: #DAA520;
+    border-radius: 5px;
+    color: #fff;
+}
+.li.dropdown:hover .link--1{
+    display: block;
+}
+
+.fas.fa-shopping-basket{
+    font-size: 21px;
+    color: #fff;
+    padding: 0 5px;
+}
+.fas.fa-shopping-basket:hover{
+    color: #800000;
+}
+
+
+/*****************MAIN*****************/
+.main{
+    font-family: 'Montserrat', sans-serif;
+}
+.order-blok{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-blok__img{
+    width: 443px;
+    height: 517px;
+    border-radius: 5px;
+}
+.order-blok__description{
+    padding: 0 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.description__name{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgb(147, 112, 219, 0.7);
+    border-radius: 5px;
+    padding: 13px 0;
+    margin: 0 0 10px 0;
+
+}
+.color-blok{
+    background-color: rgb(205, 92, 92, 0.7);
+    border-radius: 5px;
+    padding: 20px 0;
+}
+.info__text{
+    text-align: justify;
+    font-size: 13px;
+    padding: 0 20px;
+
+}
+.description__price{
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.description__cost{
+    font-size: 33px;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 67px;
+}
+.description__cost.regular{
+    padding-left: 0;
+}
+.description__in-stock{
+    color: #ADFF2F;
+}
+.description__in-stock.false{
+    color: #FFFF00;
+}
+.button{
+    width: 68%;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: #5F9EA0;
+    
+    transition-property: transform;
+    transition-duration: 1s;
+
+    border-radius: 5px;
+    padding: 10px 91px;
+    font-size: 22px;
+    margin: 8px 81px 25px 81px;
+    color: white;
+}
+.button:hover{
+    background-color: #FFD700;
+    transform: scale(1.2);
+}
+.info__text.log-in,
+.info__text.log-in__text{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+.info__text.log-in:hover{
+    color: #FFD700;;
+}
+.info__text.delivery{
+    margin: 5px 0;
+}
+
+.button--1{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: rgb(147, 112, 219, 0.7);
+    border-radius: 5px;
+    padding: 10px 70px;
+    font-size: 22px;
+    margin-top: 10px;
+    color: white;
+}
+.button--1:hover{
+    background-color: rgb(255, 165, 0, 0.9);
+}
+
+
+/************FOOTER***************************/
+
+.some-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 55px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.some-info__blok{
+    text-align: center;
+    color: #fff;
+}
+.fas{
+    font-size: 50px;
+    color: #FFDAB9;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.blok__social-network.footer{
+    display: flex;
+    justify-content: center;
+}
+.fab{
+    text-decoration: none;
+    color: #BC8F8F;
+    font-size: 24px;
+}
+.fab.fa-instagram{
+    font-size: 28px;
+}
+.fab.left{
+    margin-left: 18px;
+}
+.fab:hover{
+    color: #800000;
+}
